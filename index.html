@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- links -->
+    <title>Document</title>
+    <style>
+        li {
+            border-bottom: 4px solid transparent;
+            transition: transform 0.5s;
+        }
+
+        li:hover {
+            border-bottom: 4px solid indigo;
+            color: indigo;
+            transform: translate(0px, -5px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 ">
+    <header class="pt-6 bg-no-repeat bg-cover bg-center px-6">
+        <nav>
+            <div>
+                <ul class="flex justify-center  text-black font-bold flex-wrap gap-4 md:gap-4 lg:gap-9">
+                    <a href="" class="">
+                        <li class="text-sm mg:text-sm lg:text-lg">Home</li>
+                    </a>
+                    <a href="">
+                        <li class="text-sm mg:text-sm lg:text-lg">Skills</li>
+                    </a>
+                    
+                       <a href="">
+                        <li class="text-sm mg:text-sm lg:text-lg">About Me</li>
+                       </a>
+                    
+                    <a href="">
+                        <li class=" mg:text-sm lg:text-lg">Contact Me</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-10 ">
+        <!-- banner section -->
+        <div class="">
+            <div class="flex flex-col-reverse lg:flex-row justify-between items-center w-4/5 mx-auto gap-5 ">
+                <div class="flex-1">
+
+                    <p class="md:text-6xl font-bold mb-16 lg:text-6xl font-bold mb-16 text-center">
+                        Hello, It's Me <br> <span id="element" class="text-indigo-500 "></span>
+                    </p>
+                   
+                </div>
+                <div class="flex-1 justify-center items-center">
+                    <img class="w-2/3 rounded-full mx-auto" src="./img/img2.png" alt="" />
+                </div>
+               
+            </div>
+            <div class="text-center my-9">
+                <button class="btn btn-outline btn-primary">Download CV</button>
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <!-- skill section -->
+            <section class="bg-gray-200 p-2">
+                <h1 class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-500 ">Skills</h1>
+               <div class="w-4/5 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    
+                    <!-- grid-1 -->
+                    <div class="card card-compact  bg-base-100 shadow-xl">
+                        <figure><img src="./img/h0oxKKq.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">As a novice in C++, I'm embarking on a journey to master this versatile language. My passion for coding and problem-solving drives my dedication to learning. Through hands-on projects and coursework, I'm building a strong foundation in computer science. I'm committed to writing efficient, elegant code and excited to contribute to the world of software development. Join me on this exciting path of continuous growth and innovation.</h2>
+
+                        </div>
+                      </div>
+                    <!-- grid-2 -->
+                    <div class="card card-compact  bg-base-100 shadow-xl">
+                        <figure><img class="" src="./img/java-2.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">As I set foot into the realm of Java programming, I'm embarking on a quest to harness the potential of this dynamic language. My innate fascination with coding and problem-solving drives my relentless pursuit of knowledge. Through practical projects and immersive coursework, I'm actively constructing a robust foundation in Java development. My aspiration is to craft elegant, efficient code while making meaningful contributions to the ever-evolving world of software creation. Join me as I navigate this exhilarating voyage marked by continuous growth and innovative exploration.</h2>
+
+                        </div>
+                      </div>
+                    <!-- grid-3 -->
+                    <div class="card card-compact  bg-base-100 shadow-xl">
+                        <figure><img src="./img/R_logo.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">As I delve into the world of R programming, I'm embarking on an exciting expedition to master this data-centric language. My innate passion for data analysis and statistical modeling fuels my relentless pursuit of expertise. Through hands-on projects and dedicated learning, I'm actively building a solid foundation in R programming. My goal is to create insightful data-driven solutions while contributing to the ever-evolving field of data science. Join me on this fascinating journey of continuous learning and innovative exploration.</h2>
+
+                        </div>
+                      </div>
+
+                </div>
+
+               </div>
+
+            </section>
+        <!-- skill section -->
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Amdadul Haque Hasan', ''],
+          typeSpeed: 70,
+          loop : true
+        });
+      </script>
+</body>
+
+</html>
