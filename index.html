@@ -8,8 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ee1c2b42d0.js" crossorigin="anonymous"></script>
     <!-- links -->
-    <title>Document</title>
+    <title>Portfolio</title>
     <style>
         li {
             border-bottom: 4px solid transparent;
@@ -21,27 +22,38 @@
             color: indigo;
             transform: translate(0px, -5px);
         }
+        html,body{
+            scroll-behavior: smooth;
+        }
+        header{
+            position: sticky;
+            z-index: 2;
+            top: 0;
+        }
+        main{
+            z-index: 0;
+        }
     </style>
 </head>
 
 <body class="bg-gray-100 ">
-    <header class="pt-6 bg-no-repeat bg-cover bg-center px-6">
+    <header class="pt-6 bg-no-repeat bg-cover bg-center px-6 bg-gray-100">
         <nav>
             <div>
                 <ul class="flex justify-center  text-black font-bold flex-wrap gap-4 md:gap-4 lg:gap-9">
-                    <a href="" class="">
-                        <li class="text-sm mg:text-sm lg:text-lg">Home</li>
+                    <a href="#home" class="">
+                        <li class="text-sm mg:text-lg lg:text-lg">Home</li>
                     </a>
-                    <a href="">
-                        <li class="text-sm mg:text-sm lg:text-lg">Skills</li>
+                    <a href="#skill">
+                        <li class="text-sm mg:text-lg lg:text-lg">Skills</li>
                     </a>
-                    
-                       <a href="">
-                        <li class="text-sm mg:text-sm lg:text-lg">About Me</li>
-                       </a>
-                    
-                    <a href="">
-                        <li class=" mg:text-sm lg:text-lg">Contact Me</li>
+
+                    <a href="#about-me">
+                        <li class="text-sm mg:text-lg lg:text-lg">About Me</li>
+                    </a>
+
+                    <a href="#contact-me">
+                        <li class=" text-sm mg:text-lg lg:text-lg">Contact Me</li>
                     </a>
                 </ul>
             </div>
@@ -49,75 +61,227 @@
     </header>
     <main class="mt-10 ">
         <!-- banner section -->
-        <div class="">
+        <div id="home" class="">
             <div class="flex flex-col-reverse lg:flex-row justify-between items-center w-4/5 mx-auto gap-5 ">
                 <div class="flex-1">
 
-                    <p class="md:text-6xl font-bold mb-16 lg:text-6xl font-bold mb-16 text-center">
+                    <p class="text-xl md:text-5xl font-bold mb-16 lg:text-6xl font-bold mb-16 text-center">
                         Hello, It's Me <br> <span id="element" class="text-indigo-500 "></span>
                     </p>
-                   
+
                 </div>
                 <div class="flex-1 justify-center items-center">
                     <img class="w-2/3 rounded-full mx-auto" src="./img/img2.png" alt="" />
                 </div>
-               
+
             </div>
             <div class="text-center my-9">
-                <button class="btn btn-outline btn-primary">Download CV</button>
+                <button  id="cv" class="btn btn-outline btn-primary">Download CV</button>
+                
             </div>
         </div>
-
         <!-- banner section -->
+
         <!-- skill section -->
-            <section class="bg-gray-200 p-2">
-                <h1 class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-500 ">Skills</h1>
-               <div class="w-4/5 mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    
+        <section id="skill" class="bg-gray-200 p-2">
+            <h1
+                class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-800 ">
+                Skills</h1>
+            <div class="w-4/5 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+
                     <!-- grid-1 -->
                     <div class="card card-compact  bg-base-100 shadow-xl">
                         <figure><img src="./img/h0oxKKq.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">As a novice in C++, I'm embarking on a journey to master this versatile language. My passion for coding and problem-solving drives my dedication to learning. Through hands-on projects and coursework, I'm building a strong foundation in computer science. I'm committed to writing efficient, elegant code and excited to contribute to the world of software development. Join me on this exciting path of continuous growth and innovation.</h2>
+                            <h2 class="card-title">As a novice in C++, I'm embarking on a journey to master this
+                                versatile language. My passion for coding and problem-solving drives my dedication to
+                                learning. Through hands-on projects and coursework, I'm building a strong foundation in
+                                computer science. I'm committed to writing efficient, elegant code and excited to
+                                contribute to the world of software development. Join me on this exciting path of
+                                continuous growth and innovation.</h2>
 
                         </div>
-                      </div>
+                    </div>
                     <!-- grid-2 -->
                     <div class="card card-compact  bg-base-100 shadow-xl">
                         <figure><img class="" src="./img/java-2.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">As I set foot into the realm of Java programming, I'm embarking on a quest to harness the potential of this dynamic language. My innate fascination with coding and problem-solving drives my relentless pursuit of knowledge. Through practical projects and immersive coursework, I'm actively constructing a robust foundation in Java development. My aspiration is to craft elegant, efficient code while making meaningful contributions to the ever-evolving world of software creation. Join me as I navigate this exhilarating voyage marked by continuous growth and innovative exploration.</h2>
+                            <h2 class="card-title">As I set foot into the realm of Java programming, I'm embarking on a
+                                quest to harness the potential of this dynamic language. My innate fascination with
+                                coding and problem-solving drives my relentless pursuit of knowledge. Through practical
+                                projects and immersive coursework, I'm actively constructing a robust foundation in Java
+                                development. My aspiration is to craft elegant, efficient code while making meaningful
+                                contributions to the ever-evolving world of software creation. Join me as I navigate
+                                this exhilarating voyage marked by continuous growth and innovative exploration.</h2>
 
                         </div>
-                      </div>
+                    </div>
                     <!-- grid-3 -->
                     <div class="card card-compact  bg-base-100 shadow-xl">
                         <figure><img src="./img/R_logo.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">As I delve into the world of R programming, I'm embarking on an exciting expedition to master this data-centric language. My innate passion for data analysis and statistical modeling fuels my relentless pursuit of expertise. Through hands-on projects and dedicated learning, I'm actively building a solid foundation in R programming. My goal is to create insightful data-driven solutions while contributing to the ever-evolving field of data science. Join me on this fascinating journey of continuous learning and innovative exploration.</h2>
+                            <h2 class="card-title">As I delve into the world of R programming, I'm embarking on an
+                                exciting expedition to master this data-centric language. My innate passion for data
+                                analysis and statistical modeling fuels my relentless pursuit of expertise. Through
+                                hands-on projects and dedicated learning, I'm actively building a solid foundation in R
+                                programming. My goal is to create insightful data-driven solutions while contributing to
+                                the ever-evolving field of data science. Join me on this fascinating journey of
+                                continuous learning and innovative exploration.</h2>
 
                         </div>
-                      </div>
+                    </div>
 
                 </div>
 
-               </div>
+            </div>
 
-            </section>
+        </section>
         <!-- skill section -->
+
+        <!--about me section   -->
+        <section id="about-me" class="mt-8 p-4 mb-8">
+            <h1
+                class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-800 ">
+                About Me</h1>
+            <div class="">
+                <div class="flex flex-col lg:flex-row justify-between items-center w-4/5 mx-auto gap-5 ">
+                    <div class="flex-1 justify-center items-center">
+                        <img class="w-2/3 rounded-full mx-auto" src="./img/img1.png" alt="" />
+                    </div>
+                    <div class="flex-1">
+
+                        <p class="text-3xl md:text-5xl font-bold mb-16 lg:text-6xl font-bold mb-16 text-center">
+                            I'm <span id="element" class="text-indigo-500 ">Amdadul Haque Hasan</span>
+                        </p>
+                        <p class=" text-lg lg:text-xl font-bold text-center">I am a student. Studying BSc of Information Technology
+                            in University of Information Technology Sciences, UITS. During Studing in BSc of Information
+                            Technology I decided to develop my skills at progarmming language. Thats Why I admitted
+                            myself in CP Academy to develop my skills. Now I am interested in Machine learning. Thats
+                            the reason I started to learn Java and R language.</p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!--about me section   -->
+
+        <!-- Education sections -->
+        <section class="bg-gray-200 p-2">
+            <h1
+                class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-800 ">
+                Education</h1>
+            <div class="w-4/5 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-8">
+
+                    <!-- grid-1 -->
+                    <div class="card  bg-primary text-primary-content">
+                        <div class="card-body">
+                            <h2 class="card-title text-white font-bold">Secondary School Certificate</h2>
+                            <p>I have completed my SSC from KPB School & College in 2018</p>
+
+                        </div>
+                    </div>
+                    <!-- grid-2-->
+                    <div class="card  bg-primary text-primary-content">
+                        <div class="card-body">
+                            <h2 class="card-title text-white font-bold">Higher Secondary Certificate</h2>
+                            <p>I have completed my HSC from Dhaka Imperial College in 2020</p>
+
+                        </div>
+                    </div>
+                    <!-- grid-3-->
+                    <div class="card  bg-primary text-primary-content">
+                        <div class="card-body">
+                            <h2 class="card-title text-white font-bold">Studing In Information Technology</h2>
+                            <p>I am Studing BSc in Information technology at University of Information Technology
+                                Sciences since 2021</p>
+
+                        </div>
+                    </div>
+                    <!-- grid-4-->
+                    <div class="card  bg-primary text-primary-content">
+                        <div class="card-body">
+                            <h2 class="card-title text-white font-bold">Complete Course from CP Academy</h2>
+                            <p>I have completed A course from CP Academy over CPP(c++) Language</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Education sections -->
+
+        <!-- contact me section -->
+        <section id="contact-me" class="mb-6">
+            <h1
+                class="text-3xl md:text-6xl font-bold mb-16 lg:text-5xl font-bold mb-16  mt-5 text-center text-indigo-800 ">
+                Contace Me</h1>
+            
+            <div class="flex flex-col-reverse md:flex-row lg:flex-row justify-between items-center w-4/5 mx-auto gap-5 ">
+                <!-- div-1 -->
+                <div class="flex-1 h-full ">
+                        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0719528906525!2d90.43911953358493!3d23.73711392864526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b83d0d0a225d%3A0x4c0c7137d65d9e56!2sKadamtala%20Bridge%2C%20Dhaka%201214!5e0!3m2!1sen!2sbd!4v1693654096658!5m2!1sen!2sbd" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- div2 -->
+                <div class="flex-1 p-4">
+                    <div class="card flex-shrink-0 w-full max-w-sm  bg-base-100">
+                        <div class="card-body">
+                            <div class="form-control">
+                                <label class="lable" for="email">Email:</label>
+                                <input id="mail" type="text" placeholder="email" class="input input-bordered" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                               
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Name</span>
+                                </label>
+                                <input id="name" type="text" placeholder="name" class="input input-bordered" />
+                               
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn" class="btn btn-primary">Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- contact me section -->
+
     </main>
     <footer>
-
+        <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+            <div class="flex gap-8 mt-5">
+                
+               <a href="https://www.facebook.com/amdadulhaque.hasan.965" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></a>
+               <a href="https://www.instagram.com/h_a_s_a_n_the_name_of_terror/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+               <a href="https://twitter.com/AmdadulHas1916" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+            <div>
+              <p>Copyright © 2023 - All right reserved by AURNAB</p>
+            </div>
+          </footer>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Amdadul Haque Hasan', ''],
-          typeSpeed: 70,
-          loop : true
+            strings: ['Amdadul Haque Hasan', ''],
+            typeSpeed: 70,
+            loop: true
         });
-      </script>
+    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
